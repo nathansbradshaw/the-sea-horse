@@ -8,4 +8,7 @@
   (lib (name "reset_switch")(type "KiCad")(uri "${SEAHORSE_REPO}/libraries/reset_switch")(options "")(descr ""))
   (lib (name "xiao")(type "KiCad")(uri "${SEAHORSE_REPO}/libraries/xiao")(options "")(descr ""))
   (lib (name "1044")(type "KiCad")(uri "${SEAHORSE_REPO}/libraries/1044")(options "")(descr ""))
+  (lib (name "keystone82")(type "KiCad")(uri "${SEAHORSE_REPO}/libraries/82")(options "")(descr "keystone 82 10440 battery clip"))
+  (lib (name "sn74hc595dr")(type "KiCad")(uri "${SEAHORSE_REPO}/libraries/sn74hc595dr")(options "")(descr ""))
+  (lib (name "trackpoint")(type "KiCad")(uri "${SEAHORSE_REPO}/libraries/trackpoint")(options "")(descr ""))
 )
