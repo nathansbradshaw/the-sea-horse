@@ -11,4 +11,5 @@
   (lib (name "keystone82")(type "KiCad")(uri "${SEAHORSE_REPO}/libraries/82")(options "")(descr "keystone 82 10440 battery clip"))
   (lib (name "sn74hc595dr")(type "KiCad")(uri "${SEAHORSE_REPO}/libraries/sn74hc595dr")(options "")(descr ""))
   (lib (name "trackpoint")(type "KiCad")(uri "${SEAHORSE_REPO}/libraries/trackpoint")(options "")(descr ""))
+  (lib (name "silkscreens")(type "KiCad")(uri "${SEAHORSE_REPO}/libraries/silkscreens")(options "")(descr ""))
 )

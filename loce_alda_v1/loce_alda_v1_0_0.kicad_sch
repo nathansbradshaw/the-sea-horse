@@ -6749,7 +6749,7 @@
 				)
 			)
 		)
-		(symbol "Device:Battery"
+		(symbol "Device:Battery_Cell"
 			(pin_numbers hide)
 			(pin_names
 				(offset 0) hide)
@@ -6765,7 +6765,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "Battery"
+			(property "Value" "Battery_Cell"
 				(at 2.54 0 0)
 				(effects
 					(font
@@ -6792,7 +6792,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Multiple-cell battery"
+			(property "Description" "Single-cell battery"
 				(at 0 0 0)
 				(effects
 					(font
@@ -6801,7 +6801,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "batt voltage-source cell"
+			(property "ki_keywords" "battery cell"
 				(at 0 0 0)
 				(effects
 					(font
@@ -6810,32 +6810,10 @@
 					(hide yes)
 				)
 			)
-			(symbol "Battery_0_1"
-				(rectangle
-					(start -2.286 -1.27)
-					(end 2.286 -1.524)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
+			(symbol "Battery_Cell_0_1"
 				(rectangle
 					(start -2.286 1.778)
 					(end 2.286 1.524)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start -1.524 -2.032)
-					(end 1.524 -2.54)
 					(stroke
 						(width 0)
 						(type default)
@@ -6857,31 +6835,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 -1.016) (xy 0 -0.762)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -0.508) (xy 0 -0.254)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 0.254)
+						(xy 0 0.762) (xy 0 0)
 					)
 					(stroke
 						(width 0)
@@ -6928,7 +6882,7 @@
 					)
 				)
 			)
-			(symbol "Battery_1_1"
+			(symbol "Battery_Cell_1_1"
 				(pin passive line
 					(at 0 5.08 270)
 					(length 2.54)
@@ -6948,7 +6902,7 @@
 					)
 				)
 				(pin passive line
-					(at 0 -5.08 90)
+					(at 0 -2.54 90)
 					(length 2.54)
 					(name "-"
 						(effects
@@ -8721,7 +8675,7 @@
 		(uuid "f5f44a13-be12-4e4e-b050-ac53f9c51913")
 	)
 	(junction
-		(at 363.22 64.77)
+		(at 361.95 64.77)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f652cd85-6c60-49ff-a1b0-62f91b91cadc")
@@ -9592,13 +9546,23 @@
 	)
 	(wire
 		(pts
-			(xy 363.22 64.77) (xy 363.22 66.04)
+			(xy 361.95 64.77) (xy 361.95 66.04)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "3f3071b3-6f9e-4f08-b923-25e867b9bcd2")
+	)
+	(wire
+		(pts
+			(xy 370.84 36.83) (xy 370.84 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3f45cc43-d96c-4dda-8ac4-e7fb69ef6b42")
 	)
 	(wire
 		(pts
@@ -9952,7 +9916,7 @@
 	)
 	(wire
 		(pts
-			(xy 363.22 66.04) (xy 360.68 66.04)
+			(xy 361.95 66.04) (xy 359.41 66.04)
 		)
 		(stroke
 			(width 0)
@@ -10718,7 +10682,7 @@
 	)
 	(wire
 		(pts
-			(xy 360.68 63.5) (xy 363.22 63.5)
+			(xy 359.41 63.5) (xy 361.95 63.5)
 		)
 		(stroke
 			(width 0)
@@ -10778,7 +10742,7 @@
 	)
 	(wire
 		(pts
-			(xy 363.22 63.5) (xy 363.22 64.77)
+			(xy 361.95 63.5) (xy 361.95 64.77)
 		)
 		(stroke
 			(width 0)
@@ -11210,7 +11174,7 @@
 	)
 	(wire
 		(pts
-			(xy 363.22 55.88) (xy 367.03 55.88)
+			(xy 363.22 55.88) (xy 364.49 55.88)
 		)
 		(stroke
 			(width 0)
@@ -11510,7 +11474,7 @@
 	)
 	(wire
 		(pts
-			(xy 363.22 64.77) (xy 365.76 64.77)
+			(xy 361.95 64.77) (xy 363.22 64.77)
 		)
 		(stroke
 			(width 0)
@@ -13875,7 +13839,7 @@
 			)
 		)
 	)
-	(global_label "gnd"
+	(global_label "gnd_r"
 		(shape input)
 		(at 379.73 55.88 180)
 		(fields_autoplaced yes)
@@ -13887,7 +13851,7 @@
 		)
 		(uuid "12b1b420-fed0-49ec-abf5-1adc4569f303")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 373.2978 55.88 0)
+			(at 371.544 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13920,7 +13884,7 @@
 	)
 	(global_label "gnd"
 		(shape input)
-		(at 157.48 39.37 180)
+		(at 157.48 36.83 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -13930,7 +13894,7 @@
 		)
 		(uuid "176e0a8c-ddf8-411a-8fb9-8f9ecce408f6")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 151.0478 39.37 0)
+			(at 151.0478 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14486,9 +14450,9 @@
 			)
 		)
 	)
-	(global_label "BT+"
+	(global_label "BT+_r"
 		(shape input)
-		(at 365.76 64.77 0)
+		(at 363.22 64.77 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -14498,7 +14462,7 @@
 		)
 		(uuid "48ad391d-270d-4548-a012-4107765917f6")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 372.5552 64.77 0)
+			(at 371.769 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14728,7 +14692,7 @@
 			)
 		)
 	)
-	(global_label "BT+"
+	(global_label "BT+_r"
 		(shape input)
 		(at 379.73 64.77 180)
 		(fields_autoplaced yes)
@@ -14740,7 +14704,7 @@
 		)
 		(uuid "625c33e8-9d38-40e5-8916-4a930562d264")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 372.9348 64.77 0)
+			(at 371.181 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16325,9 +16289,9 @@
 			)
 		)
 	)
-	(global_label "gnd"
+	(global_label "gnd_r"
 		(shape input)
-		(at 367.03 55.88 0)
+		(at 364.49 55.88 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -16337,7 +16301,7 @@
 		)
 		(uuid "f9f8f241-73ca-4e01-aa7c-dec66d88e9f1")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 373.4622 55.88 0)
+			(at 372.676 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16522,76 +16486,6 @@
 			(project "roadrunner"
 				(path "/38afb63f-a36a-44ef-87ae-e0923e053e07"
 					(reference "SW2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:Battery")
-		(at 370.84 34.29 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "07416c4c-2035-4ca2-9c37-25e010f76c71")
-		(property "Reference" "BT1"
-			(at 374.65 32.4484 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Battery"
-			(at 374.65 34.9884 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "keystone82:batteryHolder_10440_Keystone_82"
-			(at 370.84 32.766 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 370.84 32.766 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Multiple-cell battery"
-			(at 370.84 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "2d3765c0-82b4-4c50-8208-94f7b1c7f36d")
-		)
-		(pin "2"
-			(uuid "17e9d1ca-4713-4c30-9cd0-2b9e3e32e202")
-		)
-		(instances
-			(project "loce_alda_v1_0_0"
-				(path "/38afb63f-a36a-44ef-87ae-e0923e053e07"
-					(reference "BT1")
 					(unit 1)
 				)
 			)
@@ -17379,7 +17273,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "batt_conn"
+		(property "Value" "batt_socket"
 			(at 179.07 67.3099 0)
 			(effects
 				(font
@@ -17581,7 +17475,7 @@
 				)
 			)
 		)
-		(property "Value" "batt_conn"
+		(property "Value" "batt_pin"
 			(at 140.97 67.31 0)
 			(effects
 				(font
@@ -17656,7 +17550,7 @@
 				)
 			)
 		)
-		(property "Footprint" "reset_switch:PTS636SP43LFS"
+		(property "Footprint" "Button_Switch_SMD:Panasonic_EVQPUL_EVQPUC"
 			(at 372.11 161.29 0)
 			(effects
 				(font
@@ -17993,7 +17887,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "batt_conn"
+		(property "Value" "batt_socket"
 			(at 388.62 66.0399 0)
 			(effects
 				(font
@@ -18069,7 +17963,7 @@
 				)
 			)
 		)
-		(property "Footprint" "choc_switch:SW_Hotswap_Kailh_Choc_V1_tweaked_no_clickbar"
+		(property "Footprint" "choc_switch_3d:SW_Hotswap_Kailh_Choc_V1_tweaked_23du"
 			(at 124.46 106.68 0)
 			(effects
 				(font
@@ -18130,7 +18024,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "batt_conn"
+		(property "Value" "batt_socket"
 			(at 388.62 57.1499 0)
 			(effects
 				(font
@@ -18379,6 +18273,76 @@
 			(project "loce_alda_v1_0_0"
 				(path "/38afb63f-a36a-44ef-87ae-e0923e053e07"
 					(reference "J20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Battery_Cell")
+		(at 157.48 34.29 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "53881649-4726-4cba-a79b-b06fb0f1e477")
+		(property "Reference" "BT2"
+			(at 161.29 31.1784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Battery_Cell"
+			(at 161.29 33.7184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "keystone82:batteryHolder_10440_Keystone_82"
+			(at 157.48 32.766 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 157.48 32.766 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Single-cell battery"
+			(at 157.48 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b72aa6cb-c3fd-4026-a743-ceba0c5055de")
+		)
+		(pin "2"
+			(uuid "502927f5-cc3b-4ee1-89b9-df85b0ce3489")
+		)
+		(instances
+			(project ""
+				(path "/38afb63f-a36a-44ef-87ae-e0923e053e07"
+					(reference "BT2")
 					(unit 1)
 				)
 			)
@@ -18660,7 +18624,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "batt_conn"
+		(property "Value" "batt_socket"
 			(at 179.07 58.4199 0)
 			(effects
 				(font
@@ -18795,7 +18759,7 @@
 				)
 			)
 		)
-		(property "Value" "batt_conn"
+		(property "Value" "batt_pin"
 			(at 350.012 54.61 0)
 			(effects
 				(font
@@ -19211,7 +19175,7 @@
 				)
 			)
 		)
-		(property "Footprint" "choc_switch:SW_Hotswap_Kailh_Choc_V1_tweaked_no_clickbar"
+		(property "Footprint" "choc_switch_3d:SW_Hotswap_Kailh_Choc_V1_tweaked_23du"
 			(at 339.09 113.03 0)
 			(effects
 				(font
@@ -19393,7 +19357,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x02_Pin")
-		(at 355.6 63.5 0)
+		(at 354.33 63.5 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -19401,15 +19365,15 @@
 		(dnp no)
 		(uuid "76a2d708-fde2-47e2-badf-1ec0e3b73aa2")
 		(property "Reference" "J10"
-			(at 353.568 63.5 0)
+			(at 352.298 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "batt_conn"
-			(at 350.52 66.04 0)
+		(property "Value" "batt_pin"
+			(at 349.25 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19417,7 +19381,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
-			(at 355.6 63.5 0)
+			(at 354.33 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19426,7 +19390,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 355.6 63.5 0)
+			(at 354.33 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19435,7 +19399,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 355.6 63.5 0)
+			(at 354.33 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21018,76 +20982,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:Battery")
-		(at 157.48 34.29 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a9e032c0-0c0d-4915-95f8-83ff03a5fe01")
-		(property "Reference" "BT3"
-			(at 161.29 32.4484 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Battery"
-			(at 161.29 34.9884 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "keystone82:batteryHolder_10440_Keystone_82"
-			(at 157.48 32.766 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 157.48 32.766 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Multiple-cell battery"
-			(at 157.48 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "57be644d-b96c-4897-8c9c-0cc13e1492e3")
-		)
-		(pin "2"
-			(uuid "e24c1b29-ffaa-4490-95e1-dedc0c84fee8")
-		)
-		(instances
-			(project ""
-				(path "/38afb63f-a36a-44ef-87ae-e0923e053e07"
-					(reference "BT3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Switch:SW_Push")
 		(at 170.18 163.83 0)
 		(unit 1)
@@ -21112,7 +21006,7 @@
 				)
 			)
 		)
-		(property "Footprint" "reset_switch:PTS636SP43LFS"
+		(property "Footprint" "Button_Switch_SMD:Panasonic_EVQPUL_EVQPUC"
 			(at 170.18 158.75 0)
 			(effects
 				(font
@@ -21590,6 +21484,76 @@
 			(project "loce_alda_v1_0_0"
 				(path "/38afb63f-a36a-44ef-87ae-e0923e053e07"
 					(reference "U4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Battery_Cell")
+		(at 370.84 34.29 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c340544c-0fa9-451a-a82f-9e5f4a27d231")
+		(property "Reference" "BT1"
+			(at 374.65 31.1784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Battery_Cell"
+			(at 374.65 33.7184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "keystone82:batteryHolder_10440_Keystone_82"
+			(at 370.84 32.766 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 370.84 32.766 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Single-cell battery"
+			(at 370.84 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d08aa909-4578-40ae-8e9c-23e2f7f241ec")
+		)
+		(pin "2"
+			(uuid "e1ce46cc-92d2-4bc9-b9f0-ba5e682c6d99")
+		)
+		(instances
+			(project "loce_alda_v1_0_0"
+				(path "/38afb63f-a36a-44ef-87ae-e0923e053e07"
+					(reference "BT1")
 					(unit 1)
 				)
 			)
@@ -23193,7 +23157,7 @@
 				)
 			)
 		)
-		(property "Value" "batt_conn"
+		(property "Value" "batt_pin"
 			(at 140.462 55.88 0)
 			(effects
 				(font

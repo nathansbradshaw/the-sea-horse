@@ -581,17 +581,8 @@
 			)
 		)
 	)
-	(pad "1_1" thru_hole circle
-		(at -14.8 0.0641 180)
-		(size 2.775 2.775)
-		(drill 1.85)
-		(layers "*.Cu" "*.Mask")
-		(remove_unused_layers no)
-		(solder_mask_margin 0.102)
-		(uuid "ae352384-e3f4-478b-8a4a-14a2c99054c6")
-	)
-	(pad "1_2" thru_hole circle
-		(at -22.42 0.0641 180)
+	(pad "1" thru_hole circle
+		(at -22.42 0.0641)
 		(size 2.775 2.775)
 		(drill 1.85)
 		(layers "*.Cu" "*.Mask")
@@ -599,7 +590,16 @@
 		(solder_mask_margin 0.102)
 		(uuid "be557f29-828f-4483-8b49-e0ad2b5d3c5f")
 	)
-	(pad "2_1" thru_hole circle
+	(pad "1" thru_hole circle
+		(at -14.8 0.0641)
+		(size 2.775 2.775)
+		(drill 1.85)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.102)
+		(uuid "ae352384-e3f4-478b-8a4a-14a2c99054c6")
+	)
+	(pad "2" thru_hole circle
 		(at 12.65 0.0641)
 		(size 2.775 2.775)
 		(drill 1.85)
@@ -608,7 +608,7 @@
 		(solder_mask_margin 0.102)
 		(uuid "536785a9-d536-4fcc-b016-9551d5d3b177")
 	)
-	(pad "2_2" thru_hole circle
+	(pad "2" thru_hole circle
 		(at 20.27 0.0641)
 		(size 2.775 2.775)
 		(drill 1.85)
@@ -616,5 +616,27 @@
 		(remove_unused_layers no)
 		(solder_mask_margin 0.102)
 		(uuid "e8c36903-de65-46d9-8584-05ed99c1d474")
+	)
+	(model "${SEAHORSE_REPO}/libraries/82/82.step"
+		(offset
+			(xyz 16.5 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 0 0)
+		)
+	)
+	(model "${SEAHORSE_REPO}/libraries/82/82.step"
+		(offset
+			(xyz -18.5 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 0 180)
+		)
 	)
 )
