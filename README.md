@@ -95,7 +95,7 @@ These are links to what I bought, not necessary to get exactly the same
 | 2  |   | Reset Switch            | $0.20 USD   | No  |
 | 2  |   | XIAO nRF5284            | $20.00 USD  | NO  |
 | 2  |   | Battery Switch          | $2.50       | No  |
-| 34 |   | Choc Switches           | $27.00 USD  | Yes |
+| 34 |   | Choc 
 | 34 |   | Hot Swap Choc Sockets   | $5.10 USD   | No  |
 | 34 |   | Choc Key cap            | $11.90 USD  | Yes |
 | 34 |   | Diodes                  | $5.44 USD   | No  |
