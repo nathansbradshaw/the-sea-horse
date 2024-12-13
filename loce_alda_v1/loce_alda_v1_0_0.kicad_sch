@@ -13405,28 +13405,6 @@
 			)
 		)
 	)
-	(global_label "nfc_1_r"
-		(shape input)
-		(at 300.99 34.29 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "23b104d4-1f44-41ea-bfe4-d39e52a65d90")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 300.99 44.1694 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "SR_CS"
 		(shape input)
 		(at 87.63 72.39 0)
@@ -14415,6 +14393,28 @@
 			)
 		)
 	)
+	(global_label "vcc"
+		(shape input)
+		(at 143.51 87.63 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "8e61bf9a-075a-4329-be15-51d1ef5cd6f5")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 143.51 81.5 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "SR_CS"
 		(shape input)
 		(at 156.21 107.95 180)
@@ -14580,28 +14580,6 @@
 		(uuid "9bcdb7e7-016f-49d3-a65f-8df3ba48a808")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 339.0106 47.9837 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "nfc_2_r"
-		(shape input)
-		(at 303.53 34.29 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "9be5f02f-a4fa-42da-a38d-c7a95e5f95d7")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 303.53 44.1694 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18347,75 +18325,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x02_Socket")
-		(at 62.23 31.75 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "80194f6d-a75a-49d8-a6d5-03dfe5ed64a0")
-		(property "Reference" "J13"
-			(at 60.96 28.194 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "nfc"
-			(at 61.214 30.226 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical"
-			(at 62.23 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 62.23 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 62.23 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "c749db04-1363-4cce-bf4c-c86931a23d0b")
-		)
-		(pin "1"
-			(uuid "d1a5fda7-7d43-49ad-b283-6765de4c3f28")
-		)
-		(instances
-			(project "loce_alda_v1_0_0"
-				(path "/38afb63f-a36a-44ef-87ae-e0923e053e07"
-					(reference "J13")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Switch:SW_Push")
 		(at 304.8 139.7 0)
 		(unit 1)
@@ -18816,75 +18725,6 @@
 			(project "roadrunner"
 				(path "/38afb63f-a36a-44ef-87ae-e0923e053e07"
 					(reference "D19")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Conn_01x02_Socket")
-		(at 300.99 29.21 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "912d2c9a-7848-4afb-a572-032ef2ab472f")
-		(property "Reference" "J14"
-			(at 299.72 25.654 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "nfc"
-			(at 299.974 27.686 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical"
-			(at 300.99 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 300.99 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 300.99 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "3518bab7-9792-42b1-bf84-57179964feef")
-		)
-		(pin "1"
-			(uuid "721619de-1be4-4182-a7ad-05822d623c1b")
-		)
-		(instances
-			(project "loce_alda_v1_0_0"
-				(path "/38afb63f-a36a-44ef-87ae-e0923e053e07"
-					(reference "J14")
 					(unit 1)
 				)
 			)
