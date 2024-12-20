@@ -474,7 +474,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "roadrunner_v2_Gerber/",
       "pos_files": "",
       "specctra_dsn": "roadrunner.dsn",
       "step": "roadrunner.step",
